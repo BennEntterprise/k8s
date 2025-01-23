@@ -2,6 +2,8 @@
 
 Testing a Kubernetes YAML file before applying it to your cluster is a crucial step in ensuring that your configurations are correct and won't cause issues. Here are some methods to test and validate your YAML files:
 
+`kubeconform <yaml-file-or-dir>
+
 1. **Kubernetes Dry Run:**
    - Use the `--dry-run=client` option with `kubectl apply` to simulate the application of the YAML file without actually making changes to your cluster.
 
