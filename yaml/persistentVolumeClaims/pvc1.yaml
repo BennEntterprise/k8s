@@ -1,0 +1,12 @@
+# pvc1.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc1
+spec: 
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi # This shouldn't exceed pv spec.capacity.storage
