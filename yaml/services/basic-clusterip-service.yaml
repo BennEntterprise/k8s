@@ -9,4 +9,4 @@ spec:
     # make sure this selector matches the pods you want to serve
   ports:
   - targetPort: 80  # Port listening on the pod
-  port: 80          # Port listening on the service
+    port: 80          # Port listening on the service
