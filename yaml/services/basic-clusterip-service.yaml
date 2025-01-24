@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: clusterip-service-1
 spec:
-  type: ClusterIP
+  type: ClusterIP # the default (if not specified)
   selector:
     project: myproject 
     # make sure this selector matches the pods you want to serve
