@@ -2,7 +2,12 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-pod
+  labels:
+    app: app1
+    project: abc
 spec:
   containers:
   - name: nginx-container
     image: nginx
+    ports:
+    - containerPort: 80
