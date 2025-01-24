@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: clusterip-service-1
+  name: nginx
 spec:
-  type: ClusterIP # the default (if not specified)
+  type: ClusterIP
   selector:
+    app: app1
     project: abc 
-    # make sure this selector matches the pods you want to serve
   ports:
   - targetPort: 80  # Port listening on the pod
     port: 80          # Port listening on the service
