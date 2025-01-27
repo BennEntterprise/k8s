@@ -1,0 +1,9 @@
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app1db1
+data:
+  database_host: "192.168.30.12"
+  debug_mode: "1"
+  log_level: "verbose"
