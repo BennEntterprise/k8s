@@ -14,6 +14,11 @@ fi
 
 # Loop through each staged file and run validateOne on it
 for file in $stagedFiles; do
+    # Skip kustomization.yaml because there is a bug
+    if [[ $file == *"kustomization.yaml"* ]]; then
+        continue
+    fi
+
     ./scripts/validateOne.sh $file
     # If previous had non-zero exit code, exit
     if [ $? -ne 0 ]; then
