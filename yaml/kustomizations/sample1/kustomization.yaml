@@ -1,0 +1,6 @@
+# kustomization.yaml (THIS NAME IS RESERVED)
+secretGenerator:
+- name: kustomize-user-creds1
+  literals:
+  - username=app1admin
+  - password=1af923nf292j
